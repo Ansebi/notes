@@ -1,18 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include head.html -%}
-
-  <body>
-
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ """
-
-    <h1>JupyterLab: How ot use Virtual Environment?</h1> 
-    <p> On Windows:<br>
+  <div>
+      <h1>JupyterLab: How ot use Virtual Environment?</h1> 
+      <p> 
+        On Windows:<br>
         win+R cmd Enter<br>
         cd /d D:/Documents/Current_Project_Folder<br>
         pip install --user virtualenv<br>
@@ -22,17 +12,9 @@
         activate<br>
         (venv) pip install --user ipykernel<br>
         (venv) python -m ipykernel install --user --name=myenv<br><br>
-        
+
         At JupyterLab:<br>
         Kernel -> Change Kernel... -> myenv<br>
-    </p>
-
-""" }}
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-
-  </body>
-
+      </p>
+  </div>
 </html>
