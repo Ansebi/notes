@@ -1,5 +1,16 @@
 <!DOCTYPE html>
-<div>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ """
+
     <h1>JupyterLab: How ot use Virtual Environment?</h1> 
     <p> On Windows:<br>
         win+R cmd Enter<br>
@@ -15,5 +26,13 @@
         At JupyterLab:<br>
         Kernel -> Change Kernel... -> myenv<br>
     </p>
-</div>
+
+""" }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
 </html>
