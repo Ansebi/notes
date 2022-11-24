@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<div>
+    <h1>JupyterLab: How ot use Virtual Environment?</h1> 
+    <p> On Windows:<br>
+        win+R cmd Enter<br>
+        cd /d D:/Documents/Current_Project_Folder<br>
+        pip install --user virtualenv<br>
+        virtualenv myenv<br>
+        python -m venv myenv<br>
+        cd myenv/bin/Scripts<br>
+        activate<br>
+        (venv) pip install --user ipykernel<br>
+        (venv) python -m ipykernel install --user --name=myenv<br><br>
+        
+        At JupyterLab:<br>
+        Kernel -> Change Kernel... -> myenv<br>
+    </p>
+</div>
+</html>
