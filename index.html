@@ -20,7 +20,7 @@
   <div>
     <h1>How to open a Google Sheets table as a df without API?</h1>
     <p>
-      <code>
+      <pre>
         def google_worksheet_to_df(spreadsheet_id: str, worksheet: str):
           url = 'https://docs.google.com/spreadsheets/d/'
           url += f'{spreadsheet_id}/gviz/'
@@ -30,7 +30,7 @@
           df.drop_duplicates(inplace=True, ignore_index=True)
           df.reset_index(drop=True, inplace=True)
           return df
-      </code>
+      </pre>
     </p>
   </div>
 </html>
