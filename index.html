@@ -20,17 +20,17 @@
   <div>
     <h1>How to open a Google Sheets table as a df without API?</h1>
     <p>
-      '''
-      def google_worksheet_to_df(spreadsheet_id: str, worksheet: str):
-        url = 'https://docs.google.com/spreadsheets/d/'
-        url += f'{spreadsheet_id}/gviz/'
-        url += f'tq?tqx=out:csv&sheet={worksheet}'
-        df = pd.read_csv(url)
-        df.dropna(inplace=True)
-        df.drop_duplicates(inplace=True, ignore_index=True)
-        df.reset_index(drop=True, inplace=True)
-        return df
-      '''
+      <code>
+        def google_worksheet_to_df(spreadsheet_id: str, worksheet: str):
+          url = 'https://docs.google.com/spreadsheets/d/'
+          url += f'{spreadsheet_id}/gviz/'
+          url += f'tq?tqx=out:csv&sheet={worksheet}'
+          df = pd.read_csv(url)
+          df.dropna(inplace=True)
+          df.drop_duplicates(inplace=True, ignore_index=True)
+          df.reset_index(drop=True, inplace=True)
+          return df
+      </code>
     </p>
   </div>
 </html>
